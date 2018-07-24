@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <time.h>
 
+//Function Prototypes
 void calcAdd();
 void calcSubtract();
 void calcMultiply();
@@ -8,13 +9,14 @@ void calcDivide();
 
 int main(void)
 {
-    const char *name = "Project CyanSky X 1.0";
-    const char *version = "Version 1.0";
-    puts("PROJECT CYANSKY X");
+    const char *name = "Project CyanSky X 1.0 Update 1";
+    const char *version = "Version 1.0.1";
+    puts("Welcome to Project CyanSky X!");
     int mainChoice = 0;
-    unsigned int sentinel = 6;
+    unsigned int sentinel = 6;  //The value that the user can enter to exit the program
     while (mainChoice != sentinel)
     {
+        //Print the main menu to the screen
         printf("Please choose an option:\n"
                 "1: Calculator\n"
                 "2: Time\n"
@@ -26,9 +28,10 @@ int main(void)
         if(mainChoice == 1)
         {
             int calcChoice = 0;
-            unsigned int calcSentinel = 5;
+            unsigned int calcSentinel = 5;  //The value that the user can enter to exit the calculator
             while(calcChoice != calcSentinel)
             {
+                //Print the calculator menu to the screen
                 printf("Calculator Options:\n"
                         "1: Add 2 Numbers\n"
                         "2: Subtract 2 Numbers\n"
@@ -67,9 +70,10 @@ int main(void)
         else if(mainChoice == 3)
         {
             int aboutProgramsChoice = 0;
-            unsigned int aboutProgramsSentinel = 3;
+            unsigned int aboutProgramsSentinel = 3; //The value that the user can enter to exit "About Programs"
             while(aboutProgramsChoice != aboutProgramsSentinel)
             {
+                //Prints the "About Programs" menu to the screen
                 printf("Please choose a program to view information about:\n"
                         "1: Calculator\n"
                         "2: Time\n"
@@ -97,6 +101,7 @@ int main(void)
         }
         else if(mainChoice == 5)
         {
+            //Print the disclaimer
             puts("1. Neither Project CyanSky X, nor the programmer(s) of Project CyanSky X, nor the distributor(s) of Project CyanSky X,\n"
                     "nor anyone or anything else that is involved with Project CyanSky X, are responsible for any misinformation, any inaccuracy,\n"
                     "any problems, or any harm, whether physical or otherwise, caused by Project CyanSky X or as a result of using Project CyanSky X.\n"
